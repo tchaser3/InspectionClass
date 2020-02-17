@@ -33,6 +33,7 @@
               <Mapping SourceColumn="LastName" DataSetColumn="LastName" />
               <Mapping SourceColumn="OdometerReading" DataSetColumn="OdometerReading" />
               <Mapping SourceColumn="AssignedOffice" DataSetColumn="AssignedOffice" />
+              <Mapping SourceColumn="EmployeeID" DataSetColumn="EmployeeID" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -44,7 +45,7 @@
   <xs:element name="FindDailyVehicleInspectionByVehicleIDAndDateRangeDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="FindDailyVehicleInspectionByVehicleIDAndDateRangeDataSet" msprop:Generator_UserDSName="FindDailyVehicleInspectionByVehicleIDAndDateRangeDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="FindDailyVehicleInspectionsByVehicleIDAndDateRange" msprop:Generator_TableClassName="FindDailyVehicleInspectionsByVehicleIDAndDateRangeDataTable" msprop:Generator_TableVarName="tableFindDailyVehicleInspectionsByVehicleIDAndDateRange" msprop:Generator_TablePropName="FindDailyVehicleInspectionsByVehicleIDAndDateRange" msprop:Generator_RowDeletingName="FindDailyVehicleInspectionsByVehicleIDAndDateRangeRowDeleting" msprop:Generator_RowChangingName="FindDailyVehicleInspectionsByVehicleIDAndDateRangeRowChanging" msprop:Generator_RowEvHandlerName="FindDailyVehicleInspectionsByVehicleIDAndDateRangeRowChangeEventHandler" msprop:Generator_RowDeletedName="FindDailyVehicleInspectionsByVehicleIDAndDateRangeRowDeleted" msprop:Generator_UserTableName="FindDailyVehicleInspectionsByVehicleIDAndDateRange" msprop:Generator_RowChangedName="FindDailyVehicleInspectionsByVehicleIDAndDateRangeRowChanged" msprop:Generator_RowEvArgName="FindDailyVehicleInspectionsByVehicleIDAndDateRangeRowChangeEvent" msprop:Generator_RowClassName="FindDailyVehicleInspectionsByVehicleIDAndDateRangeRow">
+        <xs:element name="FindDailyVehicleInspectionsByVehicleIDAndDateRange" msprop:Generator_TableClassName="FindDailyVehicleInspectionsByVehicleIDAndDateRangeDataTable" msprop:Generator_TableVarName="tableFindDailyVehicleInspectionsByVehicleIDAndDateRange" msprop:Generator_RowChangedName="FindDailyVehicleInspectionsByVehicleIDAndDateRangeRowChanged" msprop:Generator_TablePropName="FindDailyVehicleInspectionsByVehicleIDAndDateRange" msprop:Generator_RowDeletingName="FindDailyVehicleInspectionsByVehicleIDAndDateRangeRowDeleting" msprop:Generator_RowChangingName="FindDailyVehicleInspectionsByVehicleIDAndDateRangeRowChanging" msprop:Generator_RowEvHandlerName="FindDailyVehicleInspectionsByVehicleIDAndDateRangeRowChangeEventHandler" msprop:Generator_RowDeletedName="FindDailyVehicleInspectionsByVehicleIDAndDateRangeRowDeleted" msprop:Generator_RowClassName="FindDailyVehicleInspectionsByVehicleIDAndDateRangeRow" msprop:Generator_UserTableName="FindDailyVehicleInspectionsByVehicleIDAndDateRange" msprop:Generator_RowEvArgName="FindDailyVehicleInspectionsByVehicleIDAndDateRangeRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="TransactionID" msprop:Generator_ColumnVarNameInTable="columnTransactionID" msprop:Generator_ColumnPropNameInRow="TransactionID" msprop:Generator_ColumnPropNameInTable="TransactionIDColumn" msprop:Generator_UserColumnName="TransactionID" type="xs:int" />
@@ -86,6 +87,7 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="EmployeeID" msprop:Generator_ColumnVarNameInTable="columnEmployeeID" msprop:Generator_ColumnPropNameInRow="EmployeeID" msprop:Generator_ColumnPropNameInTable="EmployeeIDColumn" msprop:Generator_UserColumnName="EmployeeID" type="xs:int" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
