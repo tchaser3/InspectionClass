@@ -73,6 +73,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FindDailyVehicleInspectionForDashboardDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FindDailyVehicleInspectionForGPSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindDailyVehicleInspectionForGPSDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FindDailyVehicleInspectionMaxOdometerDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -203,6 +208,17 @@
     </None>
     <None Include="FindDailyVehicleInspectionForDashboardDataSet.xss">
       <DependentUpon>FindDailyVehicleInspectionForDashboardDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindDailyVehicleInspectionForGPSDataSet.xsc">
+      <DependentUpon>FindDailyVehicleInspectionForGPSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindDailyVehicleInspectionForGPSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindDailyVehicleInspectionForGPSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindDailyVehicleInspectionForGPSDataSet.xss">
+      <DependentUpon>FindDailyVehicleInspectionForGPSDataSet.xsd</DependentUpon>
     </None>
     <None Include="FindDailyVehicleInspectionMaxOdometerDataSet.xsc">
       <DependentUpon>FindDailyVehicleInspectionMaxOdometerDataSet.xsd</DependentUpon>

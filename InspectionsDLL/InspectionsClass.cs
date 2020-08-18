@@ -9,6 +9,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
 using NewEventLogDLL;
@@ -70,6 +71,24 @@ namespace InspectionsDLL
         FindDailyVehicleInspectionMaxOdometerDataSet aFindDailyVehicleInspectionMaxOdometerDataSet;
         FindDailyVehicleInspectionMaxOdometerDataSetTableAdapters.FindDailyVehicleInspectionMaxOdometerTableAdapter aFindDailyVehicleInspectionMaxOdometerTableAdapter;
 
+        FindDailyVehicleInspectionForGPSDataSet aFindDailyVehicleInspectionForGPSDataSet;
+        FindDailyVehicleInspectionForGPSDataSetTableAdapters.FindDailyVehicleInspectionForGPSTableAdapter aFindDailyVehicleInspectionForGPSTableAdapter;
+
+        public FindDailyVehicleInspectionForGPSDataSet FindDailyVehicleInspectionForGPS(int intVehicleID, DateTime datInspectionDate, int intEmployeeID, string strInspectionStatus, int intOdometerReading)
+        {
+            try
+            {
+                aFindDailyVehicleInspectionForGPSDataSet = new FindDailyVehicleInspectionForGPSDataSet();
+                aFindDailyVehicleInspectionForGPSTableAdapter = new FindDailyVehicleInspectionForGPSDataSetTableAdapters.FindDailyVehicleInspectionForGPSTableAdapter();
+                aFindDailyVehicleInspectionForGPSTableAdapter.Fill(aFindDailyVehicleInspectionForGPSDataSet.FindDailyVehicleInspectionForGPS, intVehicleID, datInspectionDate, intEmployeeID, strInspectionStatus, intOdometerReading);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Inspections Class // Find Daily Vehicle Inspection For GPS " + Ex.Message);
+            }
+
+            return aFindDailyVehicleInspectionForGPSDataSet;
+        }
         public FindDailyVehicleInspectionMaxOdometerDataSet FindDailyVehicleInspectionMaxOdometer(int intVehicleID)
         {
             try
